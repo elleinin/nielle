@@ -1,16 +1,30 @@
 <template>
-  <nav>
+  <TopNav />
+  <!-- <nav id="nav">
     <router-link to="/">Home</router-link> |
     <router-link to="/about">About</router-link> |
     <router-link to="/nielle">Nielle</router-link> |
-  </nav>
+  </nav> -->
   <router-view />
 </template>
+
+<script>
+import TopNav from "@/components/TopNav.vue";
+
+export default {
+  components: {
+    TopNav,
+  },
+};
+</script>
 
 <style lang="scss">
 body {
   background-color: $galaxy;
   color: $ng-warm;
+  // overflow: hidden;
+  padding: 0;
+  margin: 0;
 }
 
 #app {
@@ -18,6 +32,11 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
+  padding: 0;
+  margin: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
 }
 
 nav {

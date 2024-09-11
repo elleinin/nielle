@@ -16,6 +16,55 @@ $ng-warm: #dfd9d8; // Neutral Grey Warm
 // Gradients ---
 $sunset: linear-gradient($galaxy, $blueprint, $polaris);
 $sunrise: linear-gradient($blueprint, $solar);
+// -----
+
+// ASSETS -----
+$ink-home: url(~@/assets/ink-home.png);
+$star-gradient: url(~@/assets/star-gradient.png);
+// -----
+
+// SIZING -----
+$h-nav: 77px;
+// -----
+
+// PRESET -----
+.img {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: center;
+    background-position-y: center;
+}
+
+// CONTAINERS ----- 
+.display {
+    // top: -$h-nav;
+    bottom: 0px;
+    width: 100vw;
+    height: 200vh;
+    overflow: scroll;
+}
+.fr {
+    display: flex;
+    flex-direction: row;
+}
+.fc {
+    display: flex;
+    flex-direction: column;
+}
+#nav {
+    position: fixed;
+    top: 0;
+    z-index: 10;
+}
+.asset {
+    background-size: contain;
+    position: fixed;
+    z-index: 8;
+}
+.row2 {
+    width: 100vw;
+    height: 50vh;
+}
 
 // FONTS ----
 // Inktrap ---
