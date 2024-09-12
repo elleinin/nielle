@@ -43,7 +43,7 @@ export default {
 
 .n-line {
   height: 3px;
-  width: 80vw;
+  width: 90vw;
   left: 10vw;
   background-color: #fff;
 }
@@ -57,16 +57,16 @@ export default {
 }
 
 .circ {
-  width: 38px;
-  height: 38px;
+  width: 30px;
+  height: 30px;
   border-radius: 50%;
   border: 2px solid #fff;
   &:nth-child(1) {
-    background-color: $blueprint;
+    background-color: $galaxy;
     margin-left: 30px;
   }
   &:nth-child(2) {
-    background-color: $galaxy;
+    background-color: $blueprint;
     transform: translateX(-10px);
   }
   &:nth-child(3) {

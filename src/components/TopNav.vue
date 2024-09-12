@@ -1,6 +1,24 @@
 <template>
   <div id="nav" class="fr">
-    <div class="n-line" />
+    <div class="navline fr">
+      <div class="n-line" />
+      <Transition name="link">
+        <div v-show="isNavToggled" class="link">ABT</div>
+      </Transition>
+      <div class="n-line" />
+      <Transition name="link">
+        <div v-show="isNavToggled" class="link">EXP</div>
+      </Transition>
+      <div class="n-line" />
+      <Transition name="link">
+        <div v-show="isNavToggled" class="link">WRK</div>
+      </Transition>
+      <div class="n-line" />
+      <Transition name="link">
+        <div v-show="isNavToggled" class="link">CON</div>
+      </Transition>
+      <div class="n-line" />
+    </div>
     <div class="navburger">
       <Transition name="nav">
         <div class="hamburger" v-if="isNavToggled" @click="toggle">X</div>
@@ -33,6 +51,20 @@ export default {
 </script>
 
 <style scoped lang="scss">
+.link {
+  font-family: Neo-Bold;
+  margin-top: 3px;
+  padding: 5px 5px;
+  width: 50%;
+  border-radius: 50%;
+  cursor: pointer;
+  &:hover {
+    color: $solar;
+    box-shadow: 0px 0px 0px 3px $blueprint inset;
+    @include easeOut;
+  }
+}
+
 .navburger {
   width: 40px;
   height: 30px;
@@ -47,19 +79,35 @@ export default {
     color: $punk;
     @include easeOut;
     div {
-      background-color: $punk;
+      background-color: $solar;
       @include easeOut;
     }
   }
 }
 
+.link-enter-active {
+  animation: nav 0.5s ease;
+}
+.link-leave-active {
+  animation: nav 0.5s ease reverse;
+}
+@keyframes nav {
+  0% {
+    width: 0;
+    opacity: 0;
+  }
+  100% {
+    opacity: 100%;
+    width: 50%;
+  }
+}
+
 .nav-enter-active {
-  animation: rotate 0.5s ease;
+  animation: rotate 1s ease;
   transition-delay: 0.5s;
 }
 .nav-leave-active {
   animation: rotate 0.5s ease reverse;
-  transition-delay: 0.5s;
 }
 @keyframes rotate {
   0% {
@@ -67,10 +115,11 @@ export default {
     opacity: 0;
   }
   50% {
+    transform: rotate(90deg);
     opacity: 0;
   }
   100% {
-    transform: rotate(180deg);
+    transform: rotate(0deg);
     opacity: 100;
   }
 }
@@ -86,13 +135,20 @@ export default {
   align-items: center;
 }
 
-.n-line {
-  height: 3px;
+.navline {
   width: 80vw;
   left: 10vw;
-  background-color: #fff;
   margin-right: 2.5vw;
+  overflow: hidden;
 }
+
+.n-line {
+  height: 3px;
+  width: 100%;
+  background-color: #fff;
+  flex-grow: 1;
+}
+
 .h-line {
   height: 3px;
   width: 30px;

@@ -1,3 +1,10 @@
+* {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    overflow-x: hidden;
+}
+
 // COLORS -----
 // Theme Colors ---
 $blueprint: #5f6ab1; // Blueprint Blue
@@ -40,8 +47,7 @@ $h-nav: 77px;
     // top: -$h-nav;
     bottom: 0px;
     width: 100vw;
-    height: 200vh;
-    overflow: scroll;
+    overflow-y: scroll;
 }
 .fr {
     display: flex;
@@ -57,7 +63,7 @@ $h-nav: 77px;
 }
 .asset {
     background-size: contain;
-    position: fixed;
+    position: absolute;
     z-index: 8;
 }
 .row2 {

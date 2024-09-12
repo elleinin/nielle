@@ -6,7 +6,9 @@
     <router-link to="/about">About</router-link> |
     <router-link to="/nielle">Nielle</router-link> |
   </nav> -->
-  <router-view />
+  <div class="display">
+    <router-view />
+  </div>
 </template>
 
 <script>
@@ -25,7 +27,6 @@ export default {
 body {
   background-color: $galaxy;
   color: $ng-warm;
-  // overflow: hidden;
   padding: 0;
   margin: 0;
 }
@@ -37,9 +38,7 @@ body {
   text-align: center;
   padding: 0;
   margin: 0;
-  width: 100vw;
-  height: 100vh;
-  overflow: hidden;
+  overflow-y: hidden;
 }
 
 nav {

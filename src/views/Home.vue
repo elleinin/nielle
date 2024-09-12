@@ -1,16 +1,14 @@
 <template>
-  <div class="display fc">
-    <div class="row2 fr">
+  <div class="img asset" />
+  <div class="fc">
+    <div class="row2">
       <div class="nielle">NIELLE</div>
     </div>
-    <div class="row2">
-      <div class="img ink">
-        <br />
-        Under Construction
-      </div>
+    <div class="row2 add">
+      <div class="img ink"><br />Under Construction</div>
     </div>
   </div>
-  <div class="img asset" />
+  <div id="about">HelloWorld</div>
 </template>
 
 <script>
@@ -20,13 +18,23 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+#about {
+  height: 100vh;
+}
+//MAKE NIELLE FIXED for transition to about
 .nielle {
   font-family: Inktrap-black;
   font-size: 10vh;
   color: #fff;
-  align-self: flex-end;
-  flex-grow: 1;
   z-index: 11;
+  // padding-bottom: 5vh;
+  width: 100vw;
+  top: 38vh;
+  position: fixed;
+}
+.add {
+  z-index: 3;
+  transform: translateY(-5vh);
 }
 
 .ink {
@@ -39,6 +47,6 @@ export default {
   background-image: $star-gradient;
   height: 80vh;
   width: 100%;
-  top: 10vh;
+  top: 5vh;
 }
 </style>
