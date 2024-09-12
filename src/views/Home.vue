@@ -4,7 +4,10 @@
       <div class="nielle">NIELLE</div>
     </div>
     <div class="row2">
-      <div class="img ink">Under Construction</div>
+      <div class="img ink">
+        <br />
+        Under Construction
+      </div>
     </div>
   </div>
   <div class="img asset" />
