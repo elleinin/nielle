@@ -38,7 +38,8 @@ body {
   text-align: center;
   padding: 0;
   margin: 0;
-  overflow-y: hidden;
+  width: calc(100vw - 8px);
+  // overflow-y: hidden;
 }
 
 nav {

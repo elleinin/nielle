@@ -2,7 +2,7 @@
     box-sizing: border-box;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
-    overflow-x: hidden;
+    // overflow-x: auto;
 }
 
 // COLORS -----
@@ -24,6 +24,29 @@ $ng-warm: #dfd9d8; // Neutral Grey Warm
 $sunset: linear-gradient($galaxy, $blueprint, $polaris);
 $sunrise: linear-gradient($blueprint, $solar);
 // -----
+
+/* width */
+::-webkit-scrollbar {
+    width: 5px;
+}
+  
+  /* Track */
+::-webkit-scrollbar-track {
+    background: $galaxy;
+}
+  
+  /* Handle */
+::-webkit-scrollbar-thumb {
+    background: $bluer;
+    border-radius: 10px;
+}
+  
+  /* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: $solar;
+}
+
+
 
 // ASSETS -----
 $ink-home: url(~@/assets/ink-home.png);
@@ -47,7 +70,7 @@ $h-nav: 77px;
     // top: -$h-nav;
     bottom: 0px;
     width: 100vw;
-    overflow-y: scroll;
+    // overflow-y: scroll;
 }
 .fr {
     display: flex;
@@ -56,6 +79,10 @@ $h-nav: 77px;
 .fc {
     display: flex;
     flex-direction: column;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    height: 100%;
 }
 #nav {
     position: fixed;
@@ -67,8 +94,13 @@ $h-nav: 77px;
     z-index: 8;
 }
 .row2 {
-    width: 100vw;
+    width: calc(100vw - 8px);
     height: 50vh;
+}
+
+.row5 {
+    width: 100vw;
+    height: 20vh;
 }
 
 // MIXINS -----

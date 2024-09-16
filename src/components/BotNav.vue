@@ -1,12 +1,12 @@
 <template>
   <div id="nav" class="fr">
-    <div class="n-line" />
+    <div class="n-line" :class="bg" />
   </div>
   <div class="circ-group fr">
-    <div class="circ" />
-    <div class="circ" />
-    <div class="circ" />
-    <div class="circ" />
+    <div class="circ" @click="toggle(0)" />
+    <div class="circ" @click="toggle(1)" />
+    <div class="circ" @click="toggle(2)" />
+    <div class="circ" @click="toggle(3)" />
   </div>
 </template>
 
@@ -18,12 +18,12 @@ export default {
   name: "BotNav",
   setup() {
     const store = useStore();
-    const isNavToggled = computed(() => store.state.isNavToggled);
-    const toggle = () => {
-      store.dispatch("toggleNav", isNavToggled);
-      console.log("toggle ", isNavToggled.value);
+    const currentColor = computed(() => store.state.subNav);
+    const toggle = (payload) => {
+      console.log("circles ", payload);
+      store.dispatch("toggleSubNav", payload);
     };
-    return { isNavToggled, toggle };
+    return { currentColor, toggle };
   },
 };
 </script>
@@ -31,8 +31,8 @@ export default {
 <style scoped lang="scss">
 #nav {
   height: 60px;
-  width: 100vw;
-  bottom: 15px;
+  width: calc(100vw - 8px);
+  bottom: 30px;
 }
 
 .fr {
@@ -51,7 +51,7 @@ export default {
 .circ-group {
   width: 100%;
   height: 50px;
-  bottom: 20px;
+  bottom: 35px;
   position: fixed;
   z-index: 15;
 }
@@ -76,6 +76,19 @@ export default {
   &:nth-child(4) {
     background-color: $solar;
     transform: translateX(-30px);
+  }
+  @include easeOut;
+  &:nth-child(1):hover {
+    border-color: $galaxy;
+  }
+  &:nth-child(2):hover {
+    border-color: $blueprint;
+  }
+  &:nth-child(3):hover {
+    border-color: $polaris;
+  }
+  &:nth-child(4):hover {
+    border-color: $solar;
   }
 }
 </style>

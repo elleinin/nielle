@@ -125,7 +125,7 @@ export default {
 }
 
 #nav {
-  height: 60px;
+  height: 100px;
   width: 100vw;
 }
 
@@ -139,7 +139,7 @@ export default {
   width: 80vw;
   left: 10vw;
   margin-right: 2.5vw;
-  overflow: hidden;
+  // overflow: hidden;
 }
 
 .n-line {
