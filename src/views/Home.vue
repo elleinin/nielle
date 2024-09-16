@@ -6,7 +6,7 @@
     <div class="asset circ" :class="bg" />
     <div class="asset circ" :class="bg" />
   </div>
-  <div class="fc" :class="bg">
+  <div id="home" class="fc" :class="bg">
     <div class="row2">
       <div class="nielle">{{ strings.nielle }}</div>
     </div>
@@ -14,10 +14,12 @@
       <div class="img ink"><br />{{ strings.subtitle }}</div>
     </div>
   </div>
+  <About />
 </template>
 
 <script>
 import strings from "../assets/strings.js";
+import About from "./About.vue";
 
 import { computed } from "vue";
 import { useStore } from "vuex";
@@ -48,6 +50,9 @@ export default {
     // }
 
     return { currentColor, bg, strings };
+  },
+  components: {
+    About,
   },
 };
 </script>

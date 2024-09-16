@@ -4,13 +4,7 @@
       <div class="n-line" />
       <Transition name="link">
         <div v-show="isNavToggled" class="link">
-          <a href="#/">N</a>
-        </div>
-      </Transition>
-      <div class="n-line" />
-      <Transition name="link">
-        <div v-show="isNavToggled" class="link">
-          <a href="#/about">ABT</a>
+          <a href="#/#about">ABT</a>
         </div>
       </Transition>
       <div class="n-line" />
