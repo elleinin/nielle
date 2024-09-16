@@ -28,6 +28,7 @@ export default {
 .title {
   font-family: Inktrap-black;
   font-size: 10vh;
+  margin-top: -50px;
   &:nth-child(1) {
     color: $blueprint;
   }

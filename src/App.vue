@@ -33,7 +33,8 @@ body {
 }
 
 #app {
-  font-family: Inktrap;
+  font-family: Neo Sans;
+  font-size: 12px;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
