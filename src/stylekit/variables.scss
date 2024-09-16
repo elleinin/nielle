@@ -5,6 +5,11 @@
     // overflow-x: auto;
 }
 
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
 // COLORS -----
 // Theme Colors ---
 $blueprint: #5f6ab1; // Blueprint Blue
@@ -94,7 +99,7 @@ $h-nav: 77px;
     z-index: 8;
 }
 .row2 {
-    width: calc(100vw - 8px);
+    width: 100vw;
     height: 50vh;
 }
 

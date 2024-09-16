@@ -8,15 +8,17 @@
   </div>
   <div class="fc" :class="bg">
     <div class="row2">
-      <div class="nielle">NIELLE</div>
+      <div class="nielle">{{ strings.nielle }}</div>
     </div>
     <div class="row2 add">
-      <div class="img ink"><br />Under Construction</div>
+      <div class="img ink"><br />{{ strings.subtitle }}</div>
     </div>
   </div>
 </template>
 
 <script>
+import strings from "../assets/strings.js";
+
 import { computed } from "vue";
 import { useStore } from "vuex";
 
@@ -38,7 +40,14 @@ export default {
       }
     });
 
-    return { currentColor, bg };
+    // for later
+    // function onMousemove(e) {
+    //   x.value = e.clientX * 0.1;
+    //   y.value = e.clientY * 0.1;
+    //   console.log(x.value, " ", y.value);
+    // }
+
+    return { currentColor, bg, strings };
   },
 };
 </script>
@@ -105,14 +114,13 @@ export default {
   }
 }
 
-//MAKE NIELLE FIXED for transition to about
 .nielle {
   font-family: Inktrap-black;
   font-size: 10vh;
   color: #fff;
-  z-index: 8;
+  z-index: 15;
   // padding-bottom: 5vh;
-  width: calc(100vw - 8px);
+  width: 100vw;
   top: 40vh;
   position: sticky;
 }
@@ -132,5 +140,6 @@ export default {
   height: 70vh;
   width: 100%;
   top: 15vh;
+  z-index: 9;
 }
 </style>

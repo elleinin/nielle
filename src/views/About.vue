@@ -1,19 +1,24 @@
 <template>
   <div id="about">
     <div class="fc">
-      <div class="title">NIELLE</div>
-      <div class="title">NIELLE</div>
-      <div class="title">NIELLE</div>
-      <div class="title">NIELLE</div>
-      <div class="title">NIELLE</div>
-      <div class="ib">Niña Gabrielle A. Pascual</div>
+      <div class="title">{{ strings.nielle }}</div>
+      <div class="title">{{ strings.nielle }}</div>
+      <div class="title">{{ strings.nielle }}</div>
+      <div class="title">{{ strings.nielle }}</div>
+      <div class="title">{{ strings.nielle }}</div>
+      <div class="ib">{{ strings.fname }}</div>
     </div>
   </div>
 </template>
 
 <script>
+import strings from "../assets/strings.js";
+
 export default {
   name: "AboutView",
+  setup() {
+    return { strings };
+  },
 };
 </script>
 

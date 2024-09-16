@@ -1,12 +1,13 @@
 <template>
   <TopNav />
   <BotNav />
-  <!-- <nav id="nav">
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link> |
-    <router-link to="/nielle">Nielle</router-link> |
-  </nav> -->
   <div class="display">
+    <!-- router-transitions https://router.vuejs.org/guide/advanced/transitions -->
+    <!-- <router-view v-slot="{ Component, route }">
+      <transition :name="route.meta.transition">
+        <component :is="Component" />
+      </transition>
+    </router-view> -->
     <router-view />
   </div>
 </template>
@@ -40,18 +41,5 @@ body {
   margin: 0;
   width: calc(100vw - 8px);
   // overflow-y: hidden;
-}
-
-nav {
-  padding: 30px;
-
-  a {
-    font-weight: bold;
-    color: $polaris;
-
-    &.router-link-exact-active {
-      color: $blueprint;
-    }
-  }
 }
 </style>
