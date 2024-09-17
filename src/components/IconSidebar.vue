@@ -34,7 +34,7 @@ export default {
   position: fixed;
   z-index: 8;
   top: 0;
-  right: 7.5vw;
+  right: calc(7.5vw - 5px);
 }
 
 img {
@@ -48,5 +48,11 @@ img {
       brightness(99%) contrast(103%);
   }
   @include easeOut;
+}
+
+@media only screen and (max-width: 768px) {
+  .fc {
+    right: calc(6vw - 5px);
+  }
 }
 </style>
