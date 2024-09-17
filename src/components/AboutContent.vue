@@ -23,10 +23,11 @@ export default {
 }
 
 .body {
-  width: 40vh;
+  width: 55vh;
   text-align: justify;
   margin-bottom: 12px;
   line-height: 150%;
+  padding: 20px;
 }
 
 .title {
@@ -34,5 +35,12 @@ export default {
   font-size: 7vh;
   margin-top: -50px;
   color: $bluer;
+}
+
+@media only screen and (max-width: 768px) {
+  .body {
+    width: 60vw;
+    padding: 0;
+  }
 }
 </style>

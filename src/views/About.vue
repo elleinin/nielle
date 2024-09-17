@@ -1,5 +1,6 @@
 <template>
   <div id="about" :class="data.bg">
+    <IconSidebar />
     <Transition>
       <component
         :is="data.aboutComponent"
@@ -14,6 +15,7 @@
 <script lang="jsx">
 import AboutNielle from "@/components/AboutNielle.vue";
 import AboutContent from "@/components/AboutContent.vue";
+import IconSidebar from "@/components/IconSidebar.vue";
 import strings from "../assets/strings.js";
 
 import { computed } from "vue";
@@ -64,6 +66,9 @@ export default {
       AboutContent,
       data,
     };
+  },
+  components: {
+    IconSidebar,
   },
 };
 </script>
