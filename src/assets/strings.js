@@ -1,5 +1,6 @@
 const strings = {
   nielle: "NIELLE",
+  ninielle: "NINIELLE",
   subtitle: "Under Construction",
   fname: "Niña Gabrielle A. Pascual",
   lipsum1: "Lorem ipsum dolor sit amet.",

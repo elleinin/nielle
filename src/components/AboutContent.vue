@@ -1,24 +1,25 @@
 <template>
   <div class="fc">
-    <div class="title">NINIELLE</div>
-    <div class="body">{{ strings.lipsum2 }}</div>
-    <div class="ib">{{ strings.fname }}</div>
+    <div class="title">{{ props.title }}</div>
+    <div class="body">{{ props.body }}</div>
+    <div class="subtitle">{{ props.sub }}</div>
   </div>
 </template>
 
 <script>
 import strings from "../assets/strings.js";
 export default {
-  name: "AboutNinielle",
-  setup() {
-    return { strings };
+  name: "AboutContent",
+  props: ["title", "body", "sub", "bg"],
+  setup(props) {
+    return { strings, props };
   },
 };
 </script>
 
 <style lang="scss" scoped>
-.ib {
-  font-family: Inktrap-black;
+.subtitle {
+  @include ib;
   font-size: 3vh;
 }
 

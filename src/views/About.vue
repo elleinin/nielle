@@ -1,52 +1,69 @@
 <template>
   <div id="about" :class="bg">
     <Transition>
-      <component :is="aboutComponent" />
+      <component
+        :is="data.aboutComponent"
+        :title="data.title"
+        :body="data.body"
+        :sub="data.sub"
+      />
     </Transition>
   </div>
 </template>
 
 <script lang="jsx">
 import AboutNielle from "@/components/AboutNielle.vue";
-import AboutNinielle from "@/components/AboutNinielle.vue";
+import AboutContent from "@/components/AboutContent.vue";
 import strings from "../assets/strings.js";
 
 import { computed } from "vue";
-import { useStore } from "vuex";
 
 export default {
   name: "AboutView",
-  setup() {
-    const store = useStore();
-    const currentColor = computed(() => store.state.subNav);
-    const bg = computed(() => {
-      switch (currentColor.value) {
+  props: ["navColor"],
+  setup(props) {
+    const data = computed(() => {
+      switch (props.navColor) {
         case 1:
-          return "blue";
+          return {
+            title: strings.ninielle,
+            body: strings.lipsum1,
+            sub: strings.lipsum1,
+            bg: "blue",
+            aboutComponent: AboutContent,
+          };
         case 2:
-          return "pink";
+          return {
+            title: strings.ninielle,
+            body: strings.lipsum1,
+            sub: strings.lipsum1,
+            bg: "pink",
+            aboutComponent: AboutContent,
+          };
         case 3:
-          return "orange";
+          return {
+            title: strings.ninielle,
+            body: strings.lipsum1,
+            sub: strings.lipsum1,
+            bg: "orange",
+            aboutComponent: AboutContent,
+          };
         default:
-          return "main";
+          return {
+            title: strings.ninielle,
+            body: strings.lipsum1,
+            sub: strings.lipsum1,
+            bg: "blue",
+            aboutComponent: AboutNielle,
+          };
       }
     });
-
-    const aboutComponent = computed(() => {
-      switch (currentColor.value) {
-        case 1: {
-          return AboutNinielle;
-        }
-        case 2:
-          return AboutNinielle;
-        case 3:
-          return AboutNinielle;
-        default:
-          return AboutNielle;
-      }
-    });
-
-    return { strings, AboutNielle, AboutNinielle, aboutComponent, bg };
+    return {
+      strings,
+      AboutNielle,
+      AboutContent,
+      data,
+    };
   },
 };
 </script>

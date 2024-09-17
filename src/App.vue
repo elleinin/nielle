@@ -25,13 +25,6 @@ export default {
 </script>
 
 <style lang="scss">
-body {
-  background-color: $galaxy;
-  color: $ng-warm;
-  padding: 0;
-  margin: 0;
-}
-
 #app {
   font-family: Neo Sans;
   font-size: 12px;
@@ -41,6 +34,5 @@ body {
   padding: 0;
   margin: 0;
   width: calc(100vw - 8px);
-  // overflow-y: hidden;
 }
 </style>

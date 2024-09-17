@@ -5,16 +5,16 @@
     <div class="row2">
       <div class="nielle">{{ strings.nielle }}</div>
     </div>
-    <div class="row2 add">
-      <div class="img ink"><br />{{ strings.subtitle }}</div>
+    <div class="row2">
+      <div class="img ink">{{ strings.subtitle }}</div>
     </div>
   </div>
-  <About />
+  <AboutView :navColor="currentColor" />
 </template>
 
 <script>
 import strings from "../assets/strings.js";
-import About from "./About.vue";
+import AboutView from "./About.vue";
 import AssetCircles from "@/components/AssetCircles.vue";
 
 import { computed } from "vue";
@@ -48,7 +48,7 @@ export default {
     return { currentColor, bg, strings };
   },
   components: {
-    About,
+    AboutView,
     AssetCircles,
   },
 };
@@ -76,14 +76,9 @@ export default {
   font-size: 10vh;
   color: #fff;
   z-index: 15;
-  // padding-bottom: 5vh;
   width: 100vw;
   top: 40vh;
   position: sticky;
-}
-.add {
-  z-index: 3;
-  // transform: translateY(-5vh);
 }
 
 .ink {

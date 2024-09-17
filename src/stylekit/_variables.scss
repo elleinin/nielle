@@ -61,6 +61,15 @@ $h-nav: 77px;
 }
 
 // FONTS ----
+@mixin ib {
+    font-family: Inktrap-black
+}
+@mixin it {
+    font-family: Inktrap
+}
+@mixin il {
+    font-family: Inktrap-light
+}
 // Inktrap ---
 @font-face {
     font-family: "Inktrap";

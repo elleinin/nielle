@@ -5,7 +5,7 @@
     <div class="title">{{ strings.nielle }}</div>
     <div class="title">{{ strings.nielle }}</div>
     <div class="title">{{ strings.nielle }}</div>
-    <div class="ib">{{ strings.fname }}</div>
+    <div class="subtitle">{{ strings.fname }}</div>
   </div>
 </template>
 
@@ -21,12 +21,12 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.ib {
-  font-family: Inktrap-black;
+.subtitle {
+  @include ib;
   font-size: 3vh;
 }
 .title {
-  font-family: Inktrap-black;
+  @include ib;
   font-size: 10vh;
   margin-top: -50px;
   &:nth-child(1) {

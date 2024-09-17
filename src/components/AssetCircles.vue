@@ -8,6 +8,9 @@
 </template>
 
 <script>
+// FUTURE SUGGESTION - Render by number of circles prop, color/s prop, position prop
+// --> can also be used for botnav(?)
+
 export default {
   name: "AssetCircles",
   props: ["bg"],
