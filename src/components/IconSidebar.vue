@@ -32,7 +32,7 @@ export default {
 <style lang="scss" scoped>
 .fc {
   position: fixed;
-  z-index: 15;
+  z-index: 8;
   top: 0;
   right: 7.5vw;
 }
