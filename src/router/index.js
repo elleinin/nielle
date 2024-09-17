@@ -1,17 +1,14 @@
 import { createRouter, createWebHashHistory } from "vue-router";
 // import HomeView from "../views/HomeView.vue";
 import Nielle from "../views/Home.vue";
+// import About from "../views/About.vue";
 
 const routes = [
   {
     path: "/",
     name: "home",
     component: Nielle,
-  },
-  {
-    path: "/nielle",
-    name: "nielle",
-    component: Nielle,
+    meta: { transition: "fade" },
   },
   // {
   //   path: "/about",
@@ -27,6 +24,14 @@ const routes = [
 const router = createRouter({
   history: createWebHashHistory(),
   routes,
+  scrollBehavior(to) {
+    if (to.hash) {
+      return {
+        el: to.hash,
+        behavior: "smooth",
+      };
+    } else return { top: 0, left: 0, behavior: "smooth" };
+  },
 });
 
 export default router;
