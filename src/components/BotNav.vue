@@ -59,7 +59,6 @@ export default {
 .circ {
   width: 30px;
   height: 30px;
-  border-radius: 50%;
   border: 2px solid #fff;
   &:nth-child(1) {
     background-color: $galaxy;
@@ -77,7 +76,6 @@ export default {
     background-color: $solar;
     transform: translateX(-30px);
   }
-  @include easeOut;
   &:nth-child(1):hover {
     border-color: $galaxy;
   }

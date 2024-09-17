@@ -25,8 +25,6 @@ export default {
 }
 
 .circ {
-  border-radius: 50%;
-  @include easeOut;
   &:nth-child(1) {
     width: 45vh;
     height: 45vh;
