@@ -7,12 +7,11 @@
 </template>
 
 <script>
-import strings from "../assets/strings.js";
 export default {
   name: "AboutContent",
   props: ["title", "body", "sub", "bg"],
   setup(props) {
-    return { strings, props };
+    return { props };
   },
 };
 </script>
@@ -27,11 +26,12 @@ export default {
   width: 40vh;
   text-align: justify;
   margin-bottom: 12px;
+  line-height: 150%;
 }
 
 .title {
   font-family: Inktrap-black;
-  font-size: 8vh;
+  font-size: 7vh;
   margin-top: -50px;
   color: $bluer;
 }

@@ -1,5 +1,5 @@
 <template>
-  <div id="about" :class="bg">
+  <div id="about" :class="data.bg">
     <Transition>
       <component
         :is="data.aboutComponent"
@@ -26,35 +26,35 @@ export default {
       switch (props.navColor) {
         case 1:
           return {
-            title: strings.ninielle,
-            body: strings.lipsum1,
-            sub: strings.lipsum1,
+            title: strings.software.title,
+            body: strings.software.body,
+            sub: strings.software.subtitle,
             bg: "blue",
             aboutComponent: AboutContent,
           };
         case 2:
           return {
-            title: strings.ninielle,
-            body: strings.lipsum1,
-            sub: strings.lipsum1,
+            title: strings.multimedia.title,
+            body: strings.multimedia.body,
+            sub: strings.subtitle,
             bg: "pink",
             aboutComponent: AboutContent,
           };
         case 3:
           return {
-            title: strings.ninielle,
-            body: strings.lipsum1,
-            sub: strings.lipsum1,
+            title: strings.nielle,
+            body: strings.lipsum2,
+            sub: strings.subtitle,
             bg: "orange",
-            aboutComponent: AboutContent,
+            aboutComponent: AboutNielle,
           };
         default:
           return {
-            title: strings.ninielle,
-            body: strings.lipsum1,
-            sub: strings.lipsum1,
-            bg: "blue",
-            aboutComponent: AboutNielle,
+            title: strings.ninielle.title,
+            body: strings.ninielle.body,
+            sub: strings.subtitle,
+            bg: "galaxy",
+            aboutComponent: AboutContent,
           };
       }
     });
