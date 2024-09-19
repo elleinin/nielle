@@ -6,14 +6,14 @@ const strings = {
 
     I am a SOFTWARE DEVELOPER by profession, with a passion for multimedia arts. I've spent my first few professional years in corporate, working as a full-stack engineer and keeping illustration, graphic design, and interaction design, among other arts, on the side as a hobby. Nowadays I've been exploring to put passion and profession together. 
     
-    Technology has the potential to communicate and connect with people of all kinds. Through UX, interaction design, and other multimedia arts, I hope to explore the creativity in Software Development for solutions both technical and communicative.
+    I believe technology has the potential to be a medium for creativity and the arts-- connecting and sharing stories of all kinds. Through UX, interaction design, and other multimedia arts, I hope to explore the creativity in Software Development for solutions both technical and communicative.
     
-    Welcome to my website / portfolio / playground for future codes.
+    Welcome to my website / portfolio / playground made with VueJS.
     I hope you enjoy what you see despite this project being currently:`,
   },
   software: {
     title: "SOFTWARE\nDEVELOPER",
-    body: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam luctus vel sapien sit amet tincidunt. In dignissim vitae ipsum eget ullamcorper. Ut aliquam consequat erat a eleifend.
+    body: `Full Stack Software Engineer with specialty in MERN and MEVN stacks and a passion for Frontend Development and Interaction design.
     
     STACKS: MERN | MEVN | Python Stacks
 
@@ -23,13 +23,14 @@ const strings = {
     DATABASE: MongoDB | Postgres | MySQL | Django
     DEVOPS: Gitlab | Docker
     AWS: EC2 | S3 Bucket | DynamoDB
-    DATA ANALYTICS TOOLSS: Firebase | Clevertap | Google Analytics
+    DATA ANALYTICS TOOLS: Firebase | Clevertap | Google Analytics
     `,
     subtitle: "FULL-STACK / FRONTEND",
   },
   multimedia: {
     title: "MULTIMEDIA\nARTIST",
-    body: "",
+    body: "Soon enough, this page will be full of my work and interaction design experiments. But for now, it's still in the making. In the meantime you may check other socials by clicking their icons on the right, or visit my old, outdated, static-html-scss-vanilla-javascript portfolio at...",
+    subtitle: "elleinin.github.io/portfolio",
   },
   subtitle: "UNDER CONSTRUCTION",
   fname: "Niña Gabrielle A. Pascual",
