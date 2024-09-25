@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_3" data-name="Layer 3" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        font-family: PPNeueMachina-InktrapUltrabold, 'PP Neue Machina';
+        font-size: 24.02px;
+        font-weight: 700;
+        stroke: #ffa795;
+        stroke-miterlimit: 10;
+        stroke-width: .75px;
+      }
+
+      .cls-2 {
+        fill: #5f6ab1;
+      }
+
+      .cls-2, .cls-3, .cls-4, .cls-5 {
+        stroke-width: 0px;
+      }
+
+      .cls-3 {
+        fill: #23203b;
+      }
+
+      .cls-4 {
+        fill: #ffa795;
+      }
+
+      .cls-5 {
+        fill: #ec77b7;
+      }
+    </style>
+  </defs>
+  <circle class="cls-4" cx="20.92" cy="9.04" r="8.1"/>
+  <circle class="cls-4" cx="29.03" cy="40.96" r="8.1"/>
+  <path class="cls-2" d="m42.68,42.68h0c-9.76-9.76-25.59-9.76-35.36,0h0c9.76-9.76,9.76-25.59,0-35.36h0c9.76,9.76,25.59,9.76,35.36,0h0c-9.76,9.76-9.76,25.59,0,35.36Z"/>
+  <path class="cls-5" d="m13.31,23.94h26.36v1.31c0,1.53-1.24,2.77-2.77,2.77H10.37v-1.14c0-1.62,1.32-2.94,2.94-2.94Z"/>
+  <path class="cls-5" d="m9.09,20.92h39.97c0,4.5-3.65,8.16-8.16,8.16H.94c0-4.5,3.65-8.16,8.16-8.16Z" transform="translate(0 50) rotate(-90)"/>
+  <g>
+    <path class="cls-3" d="m39.67,21.28h-3.8V7.52h-4.37v13.19l.18.57h-.97l-3.63-13.76h-8.58v10.26h0v3.18h0v1.07l-8.13,2.14v6.24h3.76v13.76h4.37v-13.19l-.18-.57h.97l3.63,13.76h8.58v-14.51l8.17-2.15v-6.24Zm-.79,3.36l-9.87,2.6h-1.88v13.19l.84,2.67h-1.08l-4.18-15.86h-.02s-9.59,0-9.59,0l-1.94.61v-.79l9.86-2.6h1.86v-13.19l-.84-2.67h1.08l4.18,15.86h9.65l1.94-.61v.79Z"/>
+    <text class="cls-1" transform="translate(12.61 44.18)"><tspan x="0" y="0">N</tspan></text>
+    <text class="cls-1" transform="translate(16.97 24.55)"><tspan x="0" y="0">N</tspan></text>
+  </g>
+</svg>
