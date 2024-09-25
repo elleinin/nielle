@@ -57,4 +57,13 @@ export default {
     margin-top: -4vh;
   }
 }
+
+@media only screen and (max-width: 768px) {
+  .title {
+    font-size: 8vh;
+  }
+  .subtitle {
+    font-size: 2.2vh;
+  }
+}
 </style>

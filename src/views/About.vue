@@ -1,6 +1,7 @@
 <template>
   <div id="about" :class="data.bg">
     <IconSidebar />
+    <SidebarScroll />
     <Transition>
       <component
         :is="data.aboutComponent"
@@ -16,6 +17,7 @@
 import AboutNielle from "@/components/AboutNielle.vue";
 import AboutContent from "@/components/AboutContent.vue";
 import IconSidebar from "@/components/IconSidebar.vue";
+import SidebarScroll from "@/components/SidebarScroll.vue";
 import strings from "../assets/strings.js";
 
 import { computed } from "vue";
@@ -38,7 +40,7 @@ export default {
           return {
             title: strings.multimedia.title,
             body: strings.multimedia.body,
-            sub: strings.subtitle,
+            sub: strings.multimedia.subtitle,
             bg: "pink",
             aboutComponent: AboutContent,
           };
@@ -69,6 +71,7 @@ export default {
   },
   components: {
     IconSidebar,
+    SidebarScroll,
   },
 };
 </script>

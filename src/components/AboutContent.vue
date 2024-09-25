@@ -31,7 +31,7 @@ export default {
 }
 
 .title {
-  font-family: Inktrap-black;
+  @include ib;
   font-size: 7vh;
   margin-top: -50px;
   color: $bluer;
@@ -41,7 +41,13 @@ export default {
   .body {
     width: 69vw;
     padding: 0;
-    font-family: Neo-Light;
+    font-family: Neo-Light, sans-serif;
+  }
+  .title {
+    font-size: 10vw;
+  }
+  .subtitle {
+    font-size: 5vw;
   }
 }
 </style>

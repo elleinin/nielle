@@ -1,0 +1,48 @@
+// CONTAINERS ----- 
+.display {
+    // top: -$h-nav;
+    bottom: 0px;
+    width: 100vw;
+    // overflow-y: scroll;
+}
+.fr {
+    display: flex;
+    flex-direction: row;
+}
+.fc {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    height: 100%;
+}
+#nav {
+    position: fixed;
+    z-index: 10;
+}
+.row2 {
+    width: 100vw;
+    height: 50vh;
+}
+
+.row5 {
+    width: 100vw;
+    height: 20vh;
+}
+
+.nielle {
+    font-family: Inktrap-black, Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 10vh;
+    color: #fff;
+    z-index: 15;
+    width: 100vw;
+    top: 40vh;
+    position: sticky;
+  }
+
+@media only screen and (max-width: 768px) {
+  .nielle {
+      font-size: 18vw;
+  }
+}
