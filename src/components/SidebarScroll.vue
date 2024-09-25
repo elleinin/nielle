@@ -1,6 +1,13 @@
 <template>
-  <div class="sc">
-    <img :src="NielleSVG" />
+  <div class="cont">
+    <div class="arrow-u" />
+    <div class="up" />
+    <div class="sc">
+      <a href="#/#home">
+        <img :src="NielleSVG" />
+      </a>
+    </div>
+    <div class="down" />
   </div>
 </template>
 
@@ -17,19 +24,54 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.sc {
-  position: fixed;
+.arrow {
+  &-u {
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-bottom: 5px solid transparent;
+  }
+}
+
+.up,
+.down {
+  width: 3px;
+  height: 100px;
+  z-index: 18;
+}
+
+.cont {
+  cursor: pointer;
   z-index: 20;
-  top: calc(50vh - 55px);
+  width: 58px;
+  height: 300px;
+  top: calc(50vh - 152px);
   left: calc(7.5vw - 5px);
+  position: fixed;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  flex-direction: column;
+  @include easeOut;
+  &:hover {
+    .up,
+    .sc {
+      @include easeOut;
+      background-color: $blueprint;
+    }
+    .arrow-u {
+      @include easeOut;
+      border-bottom: 5px solid $blueprint;
+    }
+  }
+}
+.sc {
   width: 58px;
   height: 58px;
   border-radius: 50%;
   // background-color: $galaxy;
-  @include easeOut;
-  &:hover {
-    background-color: $blueprint;
-  }
 }
 
 img {
