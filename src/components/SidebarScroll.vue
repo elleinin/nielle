@@ -28,9 +28,9 @@ export default {
   &-u {
     width: 0;
     height: 0;
-    border-left: 5px solid transparent;
-    border-right: 5px solid transparent;
-    border-bottom: 5px solid transparent;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-bottom: 8px solid transparent;
   }
 }
 
@@ -63,7 +63,7 @@ export default {
     }
     .arrow-u {
       @include easeOut;
-      border-bottom: 5px solid $blueprint;
+      border-bottom: 8px solid $blueprint;
     }
   }
 }
