@@ -26,7 +26,7 @@ export default {
 
 <style lang="scss">
 #app {
-  font-family: Neo Sans;
+  font-family: Neo Sans, "Arial-Narrow", sans-serif;
   font-size: 12px;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;

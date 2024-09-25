@@ -32,7 +32,7 @@
 }
 
 .nielle {
-    font-family: Inktrap-black;
+    font-family: Inktrap-black, Verdana, Geneva, Tahoma, sans-serif;
     font-size: 10vh;
     color: #fff;
     z-index: 15;
@@ -40,3 +40,9 @@
     top: 40vh;
     position: sticky;
   }
+
+@media only screen and (max-width: 768px) {
+  .nielle {
+      font-size: 18vw;
+  }
+}

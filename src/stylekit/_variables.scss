@@ -29,13 +29,13 @@ $h-nav: 77px;
 
 // FONTS ----
 @mixin ib {
-    font-family: Inktrap-black
+    font-family: Inktrap-black, Verdana, Geneva, Tahoma, sans-serif;
 }
 @mixin it {
-    font-family: Inktrap
+    font-family: Inktrap, Verdana, Geneva, Tahoma, sans-serif;
 }
 @mixin il {
-    font-family: Inktrap-light
+    font-family: Inktrap-light, Verdana, Geneva, Tahoma, sans-serif;
 }
 
 // Inktrap ---

@@ -50,7 +50,7 @@ export default {
 
 <style scoped lang="scss">
 .link {
-  font-family: Neo-Bold;
+  font-family: Neo-Bold, sans-serif;
   margin-top: 3px;
   padding: 5px 5px;
   width: 50%;
@@ -69,7 +69,7 @@ export default {
 }
 .hamburger {
   position: fixed;
-  font-family: Inktrap-black;
+  @include ib;
   font-size: 35px;
   transition-delay: 0.5s;
   cursor: pointer;
