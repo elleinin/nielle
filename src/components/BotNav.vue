@@ -43,8 +43,7 @@ export default {
 
 .n-line {
   height: 3px;
-  width: 90vw;
-  left: 10vw;
+  width: 75vw;
   background-color: #fff;
 }
 

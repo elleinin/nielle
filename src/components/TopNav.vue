@@ -13,10 +13,6 @@
       </Transition>
       <div class="n-line" />
       <Transition name="link">
-        <div v-show="isNavToggled" class="link">WRK</div>
-      </Transition>
-      <div class="n-line" />
-      <Transition name="link">
         <div v-show="isNavToggled" class="link">CON</div>
       </Transition>
       <div class="n-line" />
@@ -129,7 +125,7 @@ export default {
 #nav {
   height: 100px;
   width: 100vw;
-  z-index: 20;
+  z-index: 18;
 }
 
 .fr {
@@ -139,8 +135,8 @@ export default {
 }
 
 .navline {
-  width: 80vw;
-  left: 10vw;
+  width: 75vw;
+  margin-left: 5vw;
   margin-right: 2.5vw;
   // overflow: hidden;
 }
@@ -157,5 +153,12 @@ export default {
   width: 30px;
   background-color: #fff;
   margin: 5px;
+}
+
+@media only screen and (max-width: 768px) {
+  .navline {
+    width: 65vw;
+    margin-left: 55px;
+  }
 }
 </style>

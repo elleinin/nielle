@@ -4,7 +4,7 @@
     <style>
       .cls-1 {
         fill: none;
-        font-family: PPNeueMachina-InktrapUltrabold, 'PP Neue Machina';
+        font-family: PPNeueMachina-InktrapUltrabold, 'PP Neue Machina', 'Inktrap-black', Verdana;
         font-size: 24.02px;
         font-weight: 700;
         stroke: #ffa795;
