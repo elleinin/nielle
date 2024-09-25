@@ -13,7 +13,9 @@
       </Transition>
       <div class="n-line" />
       <Transition name="link">
-        <div v-show="isNavToggled" class="link">CON</div>
+        <div v-show="isNavToggled" class="link">
+          <a href="#/contact">CON</a>
+        </div>
       </Transition>
       <div class="n-line" />
     </div>
