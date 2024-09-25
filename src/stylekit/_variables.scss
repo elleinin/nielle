@@ -27,39 +27,6 @@ $star-gradient: url(~@/assets/star-gradient.png);
 $h-nav: 77px;
 // -----
 
-// CONTAINERS ----- 
-.display {
-    // top: -$h-nav;
-    bottom: 0px;
-    width: 100vw;
-    // overflow-y: scroll;
-}
-.fr {
-    display: flex;
-    flex-direction: row;
-}
-.fc {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    align-content: center;
-    justify-content: center;
-    height: 100%;
-}
-#nav {
-    position: fixed;
-    z-index: 10;
-}
-.row2 {
-    width: 100vw;
-    height: 50vh;
-}
-
-.row5 {
-    width: 100vw;
-    height: 20vh;
-}
-
 // FONTS ----
 @mixin ib {
     font-family: Inktrap-black
@@ -70,6 +37,7 @@ $h-nav: 77px;
 @mixin il {
     font-family: Inktrap-light
 }
+
 // Inktrap ---
 @font-face {
     font-family: "Inktrap";

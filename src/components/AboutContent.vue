@@ -43,5 +43,11 @@ export default {
     padding: 0;
     font-family: Neo-Light;
   }
+  .title {
+    font-size: 10vw;
+  }
+  .subtitle {
+    font-size: 5vw;
+  }
 }
 </style>
