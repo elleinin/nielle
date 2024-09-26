@@ -1,5 +1,8 @@
 <template>
   <div class="fc">
+    <a href="/#/#home">
+      <img :src="HomeSVG" />
+    </a>
     <a href="https://www.linkedin.com/in/ninielle/">
       <img :src="LinkedinSVG" />
     </a>
@@ -16,6 +19,7 @@
 </template>
 
 <script>
+import HomeSVG from "@/assets/icons8/icons8-home.svg";
 import LinkedinSVG from "@/assets/icons8/icons8-linkedin.svg";
 import GithubSVG from "@/assets/icons8/icons8-github.svg";
 import BehanceSVG from "@/assets/icons8/icons8-behance.svg";
@@ -24,7 +28,7 @@ import InstagramSVG from "@/assets/icons8/icons8-instagram-old.svg";
 export default {
   name: "IconSidebar",
   setup() {
-    return { LinkedinSVG, GithubSVG, BehanceSVG, InstagramSVG };
+    return { HomeSVG, LinkedinSVG, GithubSVG, BehanceSVG, InstagramSVG };
   },
 };
 </script>
@@ -32,7 +36,7 @@ export default {
 <style lang="scss" scoped>
 .fc {
   position: fixed;
-  z-index: 15;
+  z-index: 19;
   top: 0;
   right: calc(7.5vw - 5px);
 }

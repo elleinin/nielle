@@ -13,7 +13,9 @@
       </Transition>
       <div class="n-line" />
       <Transition name="link">
-        <div v-show="isNavToggled" class="link">CON</div>
+        <div v-show="isNavToggled" class="link">
+          <a href="#/contact">CON</a>
+        </div>
       </Transition>
       <div class="n-line" />
     </div>
@@ -125,7 +127,7 @@ export default {
 #nav {
   height: 100px;
   width: 100vw;
-  z-index: 18;
+  z-index: 20;
 }
 
 .fr {

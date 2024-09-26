@@ -1,6 +1,7 @@
 <template>
   <TopNav />
   <BotNav />
+  <IconSidebar />
   <div class="display">
     <!-- router-transitions https://router.vuejs.org/guide/advanced/transitions -->
     <!-- <router-view v-slot="{ Component, route }">
@@ -15,11 +16,22 @@
 <script>
 import TopNav from "@/components/TopNav.vue";
 import BotNav from "@/components/BotNav.vue";
+import IconSidebar from "@/components/IconSidebar.vue";
 
+import { computed } from "vue";
+import { useStore } from "vuex";
+
+// TO-DO: Pass data as props to children components
 export default {
+  setup() {
+    const store = useStore();
+    const currentColor = computed(() => store.state.subNav);
+    return { currentColor };
+  },
   components: {
     TopNav,
     BotNav,
+    IconSidebar,
   },
 };
 </script>

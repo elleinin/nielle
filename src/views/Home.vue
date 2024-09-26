@@ -9,6 +9,7 @@
       <div class="img ink">{{ strings.subtitle }}</div>
     </div>
   </div>
+  <AssetLines class="double" />
   <AboutView :navColor="currentColor" />
 </template>
 
@@ -16,6 +17,7 @@
 import strings from "../assets/strings.js";
 import AboutView from "./About.vue";
 import AssetCircles from "@/components/AssetCircles.vue";
+import AssetLines from "@/components/AssetLines.vue";
 
 import { computed } from "vue";
 import { useStore } from "vuex";
@@ -50,6 +52,7 @@ export default {
   components: {
     AboutView,
     AssetCircles,
+    AssetLines,
   },
 };
 </script>
@@ -93,5 +96,11 @@ export default {
   width: 100%;
   top: 15vh;
   z-index: 9;
+}
+
+.double {
+  height: 200vh;
+  top: 0;
+  left: 0;
 }
 </style>
