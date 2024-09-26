@@ -1,7 +1,7 @@
 <template>
   <div class="fc">
     <div class="title">{{ props.title }}</div>
-    <div class="body">{{ props.body }}</div>
+    <div class="body" :class="props.bg">{{ props.body }}</div>
     <div class="subtitle">{{ props.sub }}</div>
   </div>
 </template>
@@ -28,6 +28,18 @@ export default {
   margin-bottom: 12px;
   line-height: 150%;
   padding: 20px;
+  z-index: 10;
+  border-radius: 5%;
+  @include easeOut;
+  &.galaxy {
+    background-color: rgba(35, 32, 59, 0.7);
+  }
+  &.blue {
+    background-color: rgba(95, 106, 177, 0.7);
+  }
+  &.pink {
+    background-color: rgba(236, 119, 183, 0.7);
+  }
 }
 
 .title {

@@ -7,6 +7,7 @@
         :title="data.title"
         :body="data.body"
         :sub="data.sub"
+        :bg="data.bg"
       />
     </Transition>
   </div>
