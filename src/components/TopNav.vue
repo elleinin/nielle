@@ -127,7 +127,7 @@ export default {
 #nav {
   height: 100px;
   width: 100vw;
-  z-index: 18;
+  z-index: 20;
 }
 
 .fr {

@@ -1,6 +1,5 @@
 <template>
   <div id="about" :class="data.bg">
-    <IconSidebar />
     <SidebarScroll />
     <Transition>
       <component
@@ -16,7 +15,6 @@
 <script lang="jsx">
 import AboutNielle from "@/components/AboutNielle.vue";
 import AboutContent from "@/components/AboutContent.vue";
-import IconSidebar from "@/components/IconSidebar.vue";
 import SidebarScroll from "@/components/SidebarScroll.vue";
 import strings from "../assets/strings.js";
 
@@ -70,7 +68,6 @@ export default {
     };
   },
   components: {
-    IconSidebar,
     SidebarScroll,
   },
 };

@@ -16,6 +16,8 @@ $ng-warm: #dfd9d8; // Neutral Grey Warm
 // Gradients ---
 $sunset: linear-gradient($galaxy, $blueprint, $polaris);
 $sunrise: linear-gradient($blueprint, $solar);
+$midnight: linear-gradient($galaxy, $galaxy, $blueprint);
+$nightmid: linear-gradient($blueprint, $galaxy, $galaxy);
 // -----
 
 // ASSETS -----
