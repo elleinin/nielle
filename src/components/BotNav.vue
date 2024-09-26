@@ -59,6 +59,9 @@ export default {
   width: 30px;
   height: 30px;
   border: 2px solid #fff;
+  &:hover {
+    cursor: pointer;
+  }
   &:nth-child(1) {
     background-color: $galaxy;
     margin-left: 30px;
