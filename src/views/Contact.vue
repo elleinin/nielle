@@ -18,8 +18,25 @@
       </div>
     </div>
   </div>
-  <div class="icon"></div>
-  <div class="content"></div>
+  <div class="icon img"></div>
+  <div class="content">
+    <h1>NIELLE</h1>
+    <h2>Niña Gabrielle A. Pascual</h2>
+    <h3>CONTACT ME</h3>
+    <p>WORK: ninielle.ap@gmail.com <br />ART: elleinin@gmail.com</p>
+    <h3>FIND ME</h3>
+    <p>
+      At the next local music gig, art alley, fixated over my next craft-hobby,
+      or wherever my software engineer career might take me next. Currently
+      based in the Philippines.
+    </p>
+    <h3>Thank you for viewing!</h3>
+    <p>
+      If you haven't yet, you can also click the icons over at the right bar to
+      check out my LinkedIn, GitHub, Behance, and other socials. The circles at
+      the bottom bar may also show fun stuff from time to time.
+    </p>
+  </div>
 </template>
 
 <script>
@@ -60,12 +77,13 @@ export default {
 <style lang="scss" scoped>
 .icon {
   position: fixed;
-  width: 80px;
-  height: 80px;
+  width: 150px;
+  height: 150px;
   border-radius: 50%;
-  background-color: $polaris;
-  top: calc(18vh - 40px);
-  left: calc(50vw - 40px);
+  background-image: $me;
+  background-color: $n-cool;
+  top: 12vh;
+  left: calc(50vw - 75px);
   z-index: 15;
   img {
     width: 70px;
@@ -75,12 +93,37 @@ export default {
 .content {
   position: fixed;
   width: 50vw;
-  height: 70vh;
+  height: 65vh;
   top: 18vh;
   left: 25vw;
-  border-radius: 15%;
+  border-radius: 5%;
   border-style: dotted;
   border-width: 2px;
+  padding: 100px 25px 25px 25px;
+  overflow-y: auto;
+  p {
+    font-family: "Neo Sans";
+    line-height: 1rem;
+    padding-bottom: 1rem;
+  }
+  h1 {
+    @include ib;
+    font-size: 3rem;
+    line-height: 1rem;
+    line-height: 0;
+  }
+  h2 {
+    @include il;
+    font-size: 1rem;
+    line-height: 0;
+    color: $bluer;
+    padding-bottom: 20px;
+  }
+  h3 {
+    @include it;
+    font-size: 1rem;
+    border-bottom: 1px solid $bluer;
+  }
 }
 
 .fr {
@@ -147,6 +190,23 @@ export default {
 }
 
 @media only screen and (max-width: 768px) {
+  .icon {
+    height: 100px;
+    width: 100px;
+    left: calc(50vw - 50px);
+  }
+  .content {
+    padding-top: 55px;
+    h1 {
+      font-size: 2rem;
+    }
+    h2 {
+      font-size: 8px;
+    }
+    p {
+      font-size: 10px;
+    }
+  }
   .cont {
     padding-top: 25vh;
   }
