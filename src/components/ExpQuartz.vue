@@ -53,9 +53,77 @@ export default {
           };
       }
     });
+    const data = computed(() => {
+      switch (
+        props.quart //you really need to turn this into an interface
+      ) {
+        case 1:
+          return {
+            title: "PROFESSIONAL CAREER",
+            subtitle:
+              "Full-stack development solutions with product and frontend expertise.",
+            content: [
+              {
+                role: "Data Management & Analytics Developer",
+                company: "Pfizer",
+                function:
+                  "Data engineering solutions to streamline clinical data analysis",
+              },
+              {
+                role: "Mid Full Stack Software Engineer",
+                company: "Sprout Solutions",
+                function:
+                  "Frontend expertise, UX discussions and discovery, and full-stack cross-functional support to deliver AI solutions",
+              },
+              {
+                role: "Software Engineer",
+                company: "Maya Philippines, Inc.",
+                function:
+                  "Delivery of enhancements and solutions to Maya's Pay Bills feature on their mobile app and internal biller products",
+              },
+            ],
+          };
+        case 2:
+          return {
+            title: "MULTIMEDIA ARTIST",
+            subtitle:
+              "Maximalism, dreaminess, and utilizing multiple perspectives for enhanced experience.",
+            content: [
+              {
+                specialty: "Information Design",
+                subcategories:
+                  "Publication Design, Product Design, Data Visualization",
+                style: "Utilizing multiple perspectives to expand experience",
+              },
+              {
+                specialty: "Interaction Design",
+                subcategories:
+                  "Interface Design, User Experience, Game Development",
+                style:
+                  "Gamification of the simple things, and adding dimension and personality to static assets",
+              },
+              {
+                role: "Traditional Arts",
+                subcategories: "Illustration, Set Design, Clay-Sculpting",
+                style:
+                  "Explorations of the mundane in executing dreamier scenes.",
+              },
+            ],
+          };
+        case 3:
+          return {
+            title: "UNDER CONSTRUCTION",
+            subtitle:
+              "Interactive portfolio coming soon. In the meantime, you may check out the links to the right for my github, behance, and other paths to works of mine, or check out the PDF version of my portfolio here: .",
+          };
+        default:
+          return "main";
+      }
+    });
     return {
       align,
       bg,
+      data,
       show,
     };
   },
