@@ -9,7 +9,9 @@
       </Transition>
       <div class="n-line" />
       <Transition name="link">
-        <div v-show="isNavToggled" class="link">EXP</div>
+        <div v-show="isNavToggled" class="link">
+          <a href="#/experience">EXP</a>
+        </div>
       </Transition>
       <div class="n-line" />
       <Transition name="link">
