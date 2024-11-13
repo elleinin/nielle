@@ -1,20 +1,13 @@
 <template>
-  <div class="img asset polaris" />
   <AssetCircles :bg="bg" />
   <div class="circ sun" />
-  <div id="exp" :class="bg">
-    <ExpContent :quart="0" :nav="currentColor" />
-    <ExpContent :quart="1" :nav="currentColor" />
-    <ExpContent :quart="2" :nav="currentColor" />
-    <ExpContent :quart="3" :nav="currentColor" />
-    <AssetLines class="double" />
-  </div>
+  <ContentQuarters :nav="currentColor" />
+  <div class="img asset polaris" />
 </template>
 
 <script>
 import AssetCircles from "@/components/AssetCircles.vue";
-import AssetLines from "@/components/AssetLines.vue";
-import ExpContent from "@/components/ExpQuartz.vue";
+import ContentQuarters from "@/components/ContQuart.vue";
 
 import { computed } from "vue";
 import { useStore } from "vuex";
@@ -43,8 +36,7 @@ export default {
   },
   components: {
     AssetCircles,
-    AssetLines,
-    ExpContent,
+    ContentQuarters,
   },
 };
 </script>
@@ -53,8 +45,9 @@ export default {
 .polaris {
   background-image: $star-circle;
   height: 50vh;
-  width: 100%;
+  width: 50vh;
   top: 25vh;
+  left: calc(50vw - 25vh);
   z-index: 9;
 }
 
@@ -66,5 +59,15 @@ export default {
   height: 33vh;
   left: calc(50vw - 16.5vh);
   top: calc(50vh - 16.5vh);
+}
+
+.v-enter-active,
+.v-leave-active {
+  transition: opacity 0.5s ease;
+}
+
+.v-enter-from,
+.v-leave-to {
+  opacity: 0;
 }
 </style>
