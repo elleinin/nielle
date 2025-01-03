@@ -5,10 +5,12 @@
     width: 100vw;
     // overflow-y: scroll;
 }
+
 .fr {
     display: flex;
     flex-direction: row;
 }
+
 .fc {
     display: flex;
     flex-direction: column;
@@ -17,6 +19,7 @@
     justify-content: center;
     height: 100%;
 }
+
 #nav {
     position: fixed;
     z-index: 10;
@@ -43,6 +46,11 @@
     height: 100vh;
 }
 
+.col2 {
+    width: 50vw;
+    // height: 100vh;
+}
+
 .nielle {
     font-family: Inktrap-black, Verdana, Geneva, Tahoma, sans-serif;
     font-size: 10vh;
@@ -51,10 +59,10 @@
     width: 100vw;
     top: 40vh;
     position: sticky;
-  }
+}
 
 @media only screen and (max-width: 768px) {
-  .nielle {
-      font-size: 18vw;
-  }
+    .nielle {
+        font-size: 18vw;
+    }
 }

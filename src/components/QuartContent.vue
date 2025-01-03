@@ -123,8 +123,22 @@ export default {
           return {
             bg: "orange",
             accent: "a-black",
-            header: "UNDER CONSTRUCTION",
-            desc: "Interactive portfolio coming soon. In the meantime, you may check out the links to the right for my github, behance, and other paths to works of mine, or check out the PDF version of my portfolio here: .",
+            header: "PORTFOLIO",
+            desc: "Most of my professional work with Software Development are confidential and owned by my employers. Still, you may view my personal codes and explorations over at",
+            contents: [
+              {
+                title: "GITHUB - Software Development",
+                sub: "https://github.com/elleinin",
+              },
+              {
+                title: "BEHANCE - Multimedia Arts",
+                sub: "https://www.behance.net/ninielle",
+              },
+              {
+                title: "LINKEDIN - Professional Experience",
+                sub: "https://www.linkedin.com/in/ninielle/",
+              },
+            ],
           };
         default:
           return {
