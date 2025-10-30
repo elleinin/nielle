@@ -1,6 +1,6 @@
 <template>
   <div class="fc">
-    <div class="title">{{ props.title }}</div>
+    <div class="title" :class="props.bg">{{ props.title }}</div>
     <div class="body" :class="props.bg">{{ props.body }}</div>
     <div class="subtitle">{{ props.sub }}</div>
   </div>
@@ -39,6 +39,10 @@ export default {
   }
   &.pink {
     background-color: rgba(236, 119, 183, 0.7);
+    color: rgba(35, 32, 59, 0.7);
+  }
+  &.orange {
+    color: rgba(35, 32, 59, 0.7);
   }
 }
 
@@ -47,6 +51,9 @@ export default {
   font-size: 7vh;
   margin-top: -50px;
   color: $bluer;
+  &.blue {
+    color: $punk;
+  }
 }
 
 @media only screen and (max-width: 768px) {

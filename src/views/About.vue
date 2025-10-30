@@ -14,7 +14,7 @@
 </template>
 
 <script lang="jsx">
-import AboutNielle from "@/components/AboutNielle.vue";
+import AboutResume from "@/components/AboutResume.vue";
 import AboutContent from "@/components/AboutContent.vue";
 import SidebarScroll from "@/components/SidebarScroll.vue";
 import strings from "../assets/strings.js";
@@ -29,33 +29,33 @@ export default {
       switch (props.navColor) {
         case 1:
           return {
-            title: strings.software.title,
-            body: strings.software.body,
-            sub: strings.software.subtitle,
+            title: strings.career.title,
+            body: strings.career.body,
+            sub: strings.career.subtitle,
             bg: "blue",
             aboutComponent: AboutContent,
           };
         case 2:
           return {
-            title: strings.multimedia.title,
-            body: strings.multimedia.body,
-            sub: strings.multimedia.subtitle,
+            title: strings.studies.title,
+            body: strings.studies.body,
+            sub: strings.studies.subtitle,
             bg: "pink",
             aboutComponent: AboutContent,
           };
         case 3:
           return {
-            title: strings.nielle,
-            body: strings.lipsum2,
-            sub: strings.subtitle,
+            title: strings.resume.title,
+            body: strings.resume.body,
+            sub: strings.resume.subtitle,
             bg: "orange",
-            aboutComponent: AboutNielle,
+            aboutComponent: AboutResume,
           };
         default:
           return {
             title: strings.ninielle.title,
             body: strings.ninielle.body,
-            sub: strings.subtitle,
+            sub: strings.ninielle.subtitle,
             bg: "galaxy",
             aboutComponent: AboutContent,
           };
@@ -63,7 +63,7 @@ export default {
     });
     return {
       strings,
-      AboutNielle,
+      AboutResume,
       AboutContent,
       data,
     };

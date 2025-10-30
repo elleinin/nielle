@@ -1,6 +1,7 @@
 import { createRouter, createWebHashHistory } from "vue-router";
 // import HomeView from "../views/HomeView.vue";
 import Nielle from "../views/Home.vue";
+import Skills from "../views/Skills.vue";
 import Experience from "../views/Experience.vue";
 import Contact from "../views/Contact.vue";
 // import About from "../views/About.vue";
@@ -15,6 +16,12 @@ const routes = [
   {
     path: "/experience",
     name: "experience",
+    component: Skills,
+    meta: { transition: "fade" },
+  },
+  {
+    path: "/work",
+    name: "work",
     component: Experience,
     meta: { transition: "fade" },
   },

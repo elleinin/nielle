@@ -1,14 +1,24 @@
 <template>
-  <AssetCircles :bg="bg" />
-  <div class="circ sun" />
-  <ContentQuarters :nav="currentColor" />
-  <div class="img asset polaris" />
+  <div class="fc" :class="bg">
+    <h3>
+      Though most of my work are owned by the companies I've worked for, please
+      enjoy this minigame I made post-graduation. Feel free to explore my 2021
+      website too at:
+    </h3>
+    <a href="https://elleinin.github.io/portfolio/">2021 Personal Website</a>
+    <div class="frame">
+      <iframe
+        src="https://elleinin.github.io/portfolio/redirect.html"
+        title="2021 Online Portfolio Easter Egg"
+        height="500"
+        width="330"
+      >
+      </iframe>
+    </div>
+  </div>
 </template>
 
 <script>
-import AssetCircles from "@/components/AssetCircles.vue";
-import ContentQuarters from "@/components/ContQuart.vue";
-
 import { computed } from "vue";
 import { useStore } from "vuex";
 
@@ -34,31 +44,38 @@ export default {
 
     return { currentColor, bg };
   },
-  components: {
-    AssetCircles,
-    ContentQuarters,
-  },
 };
 </script>
 
 <style lang="scss" scoped>
-.polaris {
-  background-image: $star-circle;
-  height: 50vh;
-  width: 50vh;
-  top: 25vh;
-  left: calc(50vw - 25vh);
-  z-index: 9;
+a {
+  color: $punk;
+  font-size: 3vh;
+  @include easeOut;
+}
+a:hover {
+  color: $solar;
 }
 
-.sun {
-  position: fixed;
-  background-color: $solar;
-  z-index: 5;
-  width: 33vh;
-  height: 33vh;
-  left: calc(50vw - 16.5vh);
-  top: calc(50vh - 16.5vh);
+.frame {
+  margin-top: 20px;
+}
+
+.fc {
+  height: 100vh;
+  @include easeOut;
+  &.main {
+    background-color: $galaxy;
+  }
+  &.blue {
+    background-color: $bluer;
+  }
+  &.pink {
+    background-color: $g-black;
+  }
+  &.orange {
+    background-color: $blueprint;
+  }
 }
 
 .v-enter-active,
