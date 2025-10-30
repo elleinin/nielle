@@ -1,0 +1,2 @@
+"use strict";(self["webpackChunkNIELLE"]=self["webpackChunkNIELLE"]||[]).push([[654],{3654:function(e,u,n){n.r(u),n.d(u,{default:function(){return i}});var t=n(6768),a=n(4232),r=n(144);const s="3.5.0",c={"aria-hidden":"true"},i={__name:"PackageVersion",setup(e){return(e,u)=>((0,t.uX)(),(0,t.CE)("desc",c,"Composed with Vue Data UI "+(0,a.v_)((0,r.R1)(s)),1))}}}}]);
+//# sourceMappingURL=654.45d3cc7b.js.map
